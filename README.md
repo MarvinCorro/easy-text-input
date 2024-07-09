@@ -13,7 +13,7 @@ The text input component exposes the following API:
 To use the text input component, simply import it into your project and pass the necessary props. Here's an example:
 
 ```jsx
-import TextInput from 'easy-text-input';
+import Input from 'easy-text-input';
 
 function App() {
   const [inputValue, setInputValue] = useState('');
@@ -25,7 +25,7 @@ function App() {
   return (
     <div>
       <h1>Easy Text Input Example</h1>
-      <TextInput
+      <Input
         value={inputValue}
         onChange={handleInputChange}
         placeholder="Enter your text here"
