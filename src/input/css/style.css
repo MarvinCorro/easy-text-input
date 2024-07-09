@@ -1,0 +1,84 @@
+.easy-input-outer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.easy-input-label {
+  color: #404040;
+  padding-left: 3px;
+}
+
+.easy-input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #E6E6E6;
+  background-color: #FAFAFA;
+  color: #737373;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  width: 320px;  
+}
+
+.easy-input-container:focus-within {
+  border: 1px solid #0078D4;
+}
+
+.easy-input-leading-icon {
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #737373;
+}
+
+.easy-input-trailing-icon {
+  position: absolute;
+  right: 15px;
+}
+
+.easy-input-container input::placeholder {
+  color: #737373;
+}
+
+.easy-input-container input {
+  border: none;
+  outline: none;
+  background-color: #FAFAFA;
+  font-size: 12px;
+  margin-top: 4px;
+  width: 85%;
+}
+
+.easy-input-container:disabled {
+  color: #FAFAFA;
+}
+
+.easy-input-container input:focus  {
+  outline: none;
+}
+
+.easy-input-container input:disabled {
+  color: #A3A3A3;
+}
+
+.easy-input-container input::placeholder:disabled {
+  color: #A3A3A3;
+}
+
+.easy-input-error-message {
+  color: #FF0000;
+  font-size: 12px;
+  padding-left: 3px;
+}
+
+.easy-input-text-hint {
+  color: #737373;
+  font-size: 12px;
+  padding-left: 3px;
+}
