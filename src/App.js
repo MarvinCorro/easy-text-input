@@ -1,5 +1,6 @@
 import React from "react";
 import Input from "./input/Input";
+import Textarea from "./textbox/Textarea";
 
 export function App() {
   return (
@@ -14,43 +15,9 @@ export function App() {
         gap: "40px",
       }}
     >
-      <Input
-        placeholder="name@email.com"
-        label="Email"
-        disabled={false}
-        required={true}
-        maxLength={50}
-        trailingIcon="question"
-        textHint="This is a hint text."
-      />
-      <Input
-        placeholder="name@email.com"
-        label="Email"
-        disabled={false}
-        required={true}
-        maxLength={50}
-        leadingIcon="envelope"
-        trailingIcon="question"
-        textHint="This is a hint text."
-      />
-      <Input
-        placeholder="name@email.com"
-        label="Email"
-        disabled={true}
-        required={true}
-        maxLength={50}
-        trailingIcon="question"
-        textHint="This is a hint text."
-      />
-      <Input
-        placeholder="name@email.com"
-        label="Email"
-        disabled={false}
-        required={true}
-        maxLength={50}
-        trailingIcon="question"
-        errorMessage="This is an error message."
-      />
+      <Textarea label="Description" placeholder="Write your message..." maxLength={500} />
+      <Textarea label="Description" placeholder="Enter a description..." errorMessage={'This field is required'} maxLength={500} />
+      <Textarea label="Description" placeholder="Write your message..." maxLength={500} />
     </div>
   );
 }
